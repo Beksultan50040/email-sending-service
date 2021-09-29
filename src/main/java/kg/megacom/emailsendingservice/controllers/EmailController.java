@@ -16,17 +16,17 @@ public class EmailController  {
     @Autowired
     EmailService emailService;
 
-    @PostMapping("/simple-email/")
-    public String sendSimpleEmail(@RequestParam String email) {
+    @PostMapping("/client-email/")
+    public String clientEmail(@RequestParam String email) {
 
-      emailService.sendMail(email,"Welcome");
+      emailService.sendMail(email,"Your payment was successful");
       return "Ok";
     }
 
-    @PostMapping("/simple-email")
-    public String sendEmail() {
+    @PostMapping("/worker-email/")
+    public String workerEmail(@RequestParam String id) {
 
-      emailService.sendPreConfiguredMail("Hi");
+      emailService.sendPreConfiguredMail("Payment has been made by: " + id);
       return "Ok";
     }
 }

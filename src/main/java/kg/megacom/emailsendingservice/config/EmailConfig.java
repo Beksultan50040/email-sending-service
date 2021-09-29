@@ -11,7 +11,7 @@ public class EmailConfig
     public SimpleMailMessage emailTemplate()
     {
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setTo("beksultan.melisov@gmail.com");
+        message.setTo("beksultan.melis@kimep.kz");
         message.setFrom("beka50040@gmail.com");
         message.setSubject("Important email");
         message.setText("FATAL - Application crash. Save your job !!");
