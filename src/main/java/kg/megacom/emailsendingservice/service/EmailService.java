@@ -22,6 +22,7 @@ public class EmailService
         SimpleMailMessage message = new SimpleMailMessage();
         message.setTo(to);
         message.setText(body);
+        message.setSubject("Квитанция");
         mailSender.send(message);
     }
 

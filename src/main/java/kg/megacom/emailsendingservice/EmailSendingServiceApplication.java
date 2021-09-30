@@ -13,18 +13,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class EmailSendingServiceApplication     {
 
-
-
-
     public static void main(String[] args) {
         SpringApplication.run(EmailSendingServiceApplication.class, args);
     }
 
 
-//    @Override
-//    public void run(String... args) throws Exception {
-//
-//        emailService.sendMail("beksultan.melisov@gmail.com", "Hi");
-//
-//    }
 }
