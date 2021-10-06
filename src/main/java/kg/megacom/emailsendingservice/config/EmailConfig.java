@@ -7,7 +7,7 @@ import org.springframework.mail.SimpleMailMessage;
 @Configuration
 public class EmailConfig
 {
-    String[] to = new String[]{"beksultan.melis@kimep.kz", "beksultan.melisov@gmail.com"};
+    String[] to = new String[]{"beksultan.melis@kimep.kz" /*"beksultan.melisov@gmail.com"*/};
 
     @Bean
     public SimpleMailMessage emailTemplate()
